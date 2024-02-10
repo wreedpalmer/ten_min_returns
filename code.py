@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 from sklearn.linear_model import Ridge
 from scipy.spatial.distance import cdist
-
 import time
 import functools
 def timer(func):
@@ -16,7 +15,6 @@ def timer(func):
         print(f"Finished {func.__name__!r} in {run_time:.4f} secs")
         return value
     return wrapper_timer
-
 
 # The start and end dates of U.S. daylight savings time (DST) matches up with the transition points in the training data.
 # source: https://en.wikipedia.org/wiki/History_of_time_in_the_United_States
